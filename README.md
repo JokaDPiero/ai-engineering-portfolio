@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Debasish Nandy - Production AI Engineering Dynamic Portfolio
 
 Modern, dynamic responsive portfolio website for **Debasish Nandy (Lead AI Engineer & Systems Architect)**, deployed via GitHub Pages through GitHub Actions.
@@ -39,3 +40,7 @@ npx tsc --noEmit
 ## Deployment
 Automated via `.github/workflows/pages.yml` on push to `main`.
 Target URL: `https://jokadpiero.github.io/ai-engineering-portfolio/`
+=======
+# ai-engineering-portfolio
+My portfolio
+>>>>>>> f5a7e9932b585d89a1d90a0b8450ffc6fd231610
