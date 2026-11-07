@@ -2,7 +2,6 @@ import { ThemeManager } from './theme.js';
 import { ProjectsManager } from './projects.js';
 import { SkillsManager } from './skills.js';
 import { ExperienceManager } from './experience.js';
-import { TerminalAssistant } from './terminal.js';
 import { ATSViewer } from './ats-viewer.js';
 import { keyMetrics, candidateData, loadPortfolioConfig } from './data.js';
 
@@ -11,7 +10,6 @@ class PortfolioApp {
   private projectsManager: ProjectsManager;
   private skillsManager: SkillsManager;
   private experienceManager: ExperienceManager;
-  private terminalAssistant: TerminalAssistant;
   private atsViewer: ATSViewer;
 
   constructor() {
@@ -19,7 +17,6 @@ class PortfolioApp {
     this.projectsManager = new ProjectsManager();
     this.skillsManager = new SkillsManager();
     this.experienceManager = new ExperienceManager();
-    this.terminalAssistant = new TerminalAssistant();
     this.atsViewer = new ATSViewer();
 
     this.initApp();

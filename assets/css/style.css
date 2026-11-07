@@ -178,26 +178,6 @@ body {
   border-color: var(--accent-blue);
 }
 
-.btn-terminal-nav {
-  background: rgba(6, 182, 212, 0.12);
-  border: 1px solid rgba(6, 182, 212, 0.4);
-  color: var(--accent-cyan) !important;
-  padding: 0.4rem 0.85rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: var(--font-code);
-  font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: var(--transition);
-}
-
-.btn-terminal-nav:hover {
-  background: rgba(6, 182, 212, 0.25);
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
-}
-
 .btn-nav {
   padding: 0.45rem 1rem;
   background: var(--accent-blue);
@@ -373,19 +353,6 @@ body {
 
 .btn-outline:hover {
   background: rgba(59, 130, 246, 0.12);
-  transform: translateY(-2px);
-}
-
-.btn-terminal {
-  background: rgba(6, 182, 212, 0.15);
-  border: 1px solid var(--accent-cyan);
-  color: var(--accent-cyan);
-  font-family: var(--font-code);
-}
-
-.btn-terminal:hover {
-  background: rgba(6, 182, 212, 0.25);
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
   transform: translateY(-2px);
 }
 
@@ -1444,7 +1411,7 @@ body {
   color: var(--accent-blue);
 }
 
-/* Modals System (Project Deep Dive, Terminal, ATS Resume) */
+/* Modals System (Project Deep Dive, ATS Resume) */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1585,138 +1552,6 @@ body {
   padding-top: 1.25rem;
 }
 
-/* Terminal Modal Styling */
-.terminal-modal-container {
-  max-width: 860px;
-  height: 80vh;
-  background: #090d16;
-  border: 1px solid #1e293b;
-  font-family: var(--font-code);
-}
-
-.terminal-titlebar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.65rem 1.25rem;
-  background: #0f172a;
-  border-bottom: 1px solid #1e293b;
-}
-
-.terminal-dots {
-  display: flex;
-  gap: 0.45rem;
-}
-
-.dot {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-}
-
-.dot-red { background: #ef4444; }
-.dot-yellow { background: #f59e0b; }
-.dot-green { background: #10b981; }
-
-.terminal-title {
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-}
-
-.terminal-quick-pills {
-  display: flex;
-  gap: 0.4rem;
-  padding: 0.6rem 1.25rem;
-  background: #0b1120;
-  border-bottom: 1px solid #1e293b;
-  overflow-x: auto;
-}
-
-.term-quick-cmd {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-secondary);
-  font-family: var(--font-code);
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: var(--transition);
-}
-
-.term-quick-cmd:hover {
-  background: var(--accent-blue);
-  color: white;
-  border-color: var(--accent-blue);
-}
-
-.terminal-body {
-  flex: 1;
-  padding: 1.25rem;
-  overflow-y: auto;
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-.terminal-output {
-  margin-bottom: 1rem;
-}
-
-.term-line {
-  margin-bottom: 0.65rem;
-  word-break: break-word;
-}
-
-.term-prompt { color: #3b82f6; font-weight: 600; }
-.term-cmd { color: #f9fafb; font-weight: 600; }
-.term-bright { color: #ffffff; font-weight: 700; }
-.term-cyan { color: #06b6d4; }
-.term-yellow { color: #f59e0b; }
-.term-green { color: #10b981; }
-.term-red { color: #ef4444; }
-.term-dim { color: #64748b; }
-.term-link { color: #38bdf8; text-decoration: underline; }
-.term-resume {
-  font-family: var(--font-code);
-  font-size: 0.78rem;
-  color: #cbd5e1;
-  white-space: pre-wrap;
-  background: #020617;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid #1e293b;
-}
-
-.terminal-input-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
-  background: #0b1120;
-  border-top: 1px solid #1e293b;
-}
-
-.term-prefix {
-  color: #3b82f6;
-  font-size: 0.85rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.terminal-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  color: #f9fafb;
-  font-family: var(--font-code);
-  font-size: 0.88rem;
-}
-
-.terminal-input:focus {
-  outline: none;
-}
-
 /* ATS Resume Modal */
 .ats-content-pre {
   background: #020617;
@@ -1793,7 +1628,7 @@ body {
 
 /* Print Styles for ATS Resume printing */
 @media print {
-  .navbar, .hero-section, .projects-controls, .theme-toggle-btn, .btn-terminal, .footer, .terminal-modal-container {
+  .navbar, .hero-section, .projects-controls, .theme-toggle-btn, .footer {
     display: none !important;
   }
   body {

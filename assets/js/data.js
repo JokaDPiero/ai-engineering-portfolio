@@ -244,7 +244,7 @@ export const experienceData = [
     role: "Associate then Senior Data Scientist",
     company: "Celebal Technologies",
     period: "May 2022 – Oct 2025",
-    location: "Jaipur / Remote",
+    location: "Jaipur Office",
     highlights: [
       "Led diverse Data and AI engagements from inception to production delivery across BFSI, Supply Chain, and Enterprise domains.",
       "Coordinated with enterprise executive stakeholders to understand business requirements, authoring proposals and architectural blueprints.",
@@ -261,7 +261,7 @@ export const experienceData = [
     role: "Junior Associate Data Scientist",
     company: "Celebal Technologies",
     period: "Oct 2021 – Apr 2022",
-    location: "Jaipur / Remote",
+    location: "Jaipur Office",
     highlights: [
       "Enhanced Python coding and algorithmic problem-solving by practicing coding challenges and building production-grade utilities.",
       "Implemented classical ML algorithms alongside rigorous EDA, feature engineering, hyperparameter tuning, and drift monitoring.",
@@ -455,7 +455,7 @@ export const languagesData = [
 export const interestsData = [
   {
     title: "Sports & Athletics",
-    description: "Avid footballer. Also enjoy cricket, volleyball, table tennis (TT), and PC gaming.",
+    description: "Avid footballer. Also enjoy cricket, volleyball, and PC gaming.",
     icon: "⚽"
   },
   {

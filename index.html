@@ -50,9 +50,6 @@
         <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
           🌙 <span>Dark</span>
         </button>
-        <button class="btn-terminal-nav terminal-trigger" title="Launch Interactive AI Terminal" aria-label="Open AI Terminal">
-          <span>&gt;_</span> CLI
-        </button>
         <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
           ☰
         </button>
@@ -90,7 +87,6 @@
       <!-- Hero Call-to-Actions -->
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">Explore 9 Production Projects</a>
-        <button type="button" class="btn btn-terminal terminal-trigger">&gt;_ Launch AI Terminal</button>
         <button type="button" class="btn btn-secondary ats-viewer-trigger">📄 View ATS Resume</button>
         <a href="https://github.com/JokaDPiero" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile ↗</a>
       </div>
@@ -145,7 +141,7 @@
             Currently, at <strong>Neutrino IQ (NIQ)</strong>, I lead system architecture for an AWS-based multimodal CFA intelligence platform, orchestrating <strong>AWS Bedrock Runtime, Boto3, multi-agent pipelines (CrewAI, AutoGen), intelligent web crawlers (Crawl4AI), DSPy, LangChain, LangSmith, Amazon OpenSearch, and KMS envelope encryption</strong>, packaged with <strong>uv</strong> and Docker.
           </p>
           <p>
-            Previously at <strong>Celebal Technologies</strong>, I led technical delivery on large-scale Azure OpenAI systems, auto-scaling solutions to handle 1,000+ concurrent users with 80%+ accuracy, delivering 10+ POCs meeting all success criteria, and mentoring over 150 aspiring data scientists and engineers.
+            Previously at <strong>Celebal Technologies (Jaipur Office)</strong>, I led technical delivery on large-scale Azure OpenAI systems, auto-scaling solutions to handle 1,000+ concurrent users with 80%+ accuracy, delivering 10+ POCs meeting all success criteria, and mentoring over 150 aspiring data scientists and engineers.
           </p>
           <p>
             Skilled in data processing, model development, and cloud deployments with Azure and AWS MLOps tools (Linux, Docker, MLflow, uv, Locust). Strong in Git version control, data analytics, feature engineering, and applying state-of-the-art algorithms across Autonomous Multi-Agent Systems, Deep Learning, and Generative AI.
@@ -161,7 +157,7 @@
             </div>
             <div class="spec-item">
               <span class="spec-label">Previous Role:</span>
-              <span class="spec-val">Associate / Sr. Data Scientist @ Celebal</span>
+              <span class="spec-val">Associate / Sr. Data Scientist @ Celebal (Jaipur Office)</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Location:</span>
@@ -311,66 +307,8 @@
     </div>
   </section>
 
-  <!-- System Architecture Blueprint -->
-  <section id="architecture" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">System Architecture Blueprint</h2>
-        <p class="section-subtitle">
-          Production reference architecture for Multi-Agent Workflows (AutoGen, CrewAI), High-Speed Web Ingestion (Crawl4AI), Enterprise Hybrid RAG, Text-to-SQL Query Routing, DSPy Optimization, and Guardrails.
-        </p>
-      </div>
-
-      <div class="architecture-box">
-        <pre class="code-block">
-[Client Query // Stream Request // Multi-Agent Event]
-      │
-      ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Security, Agentic Gateway & Ingestion                      │
-│  - Multi-Agent Orchestration via AutoGen & CrewAI           │
-│  - High-Speed Web & Doc Ingestion via Crawl4AI              │
-│  - JWT Authentication + Role-Based Access Control (RBAC)    │
-│  - Microsoft Presidio PII Masking & Content Moderation      │
-│  - Observability & Distributed Traces via LangSmith & MLflow│
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Intent & Query Router (Classify: Relational vs Document)   │
-│  - Low-Latency GPU BERT Classifier / Cross-Encoder          │
-│  - Prompt Optimization via DSPy (Self-Refining Signatures)  │
-└──────────────┬───────────────────────────────┬──────────────┘
-               │                               │
-       [Structured Intent]           [Unstructured Intent]
-               │                               │
-               ▼                               ▼
-┌──────────────────────────────┐ ┌────────────────────────────┐
-│  Text-to-SQL Engine          │ │  Hybrid Vector RAG         │
-│  - Schema Validation (30+ Tbl)│ │  - Azure AI Search /       │
-│  - Synapse / RDS SQL Engine  │ │    Amazon OpenSearch       │
-│  - Strict Execution Guardrail│ │  - Cross-Encoder Reranker  │
-└──────────────┬───────────────┘ └─────────────┬──────────────┘
-               │                               │
-               └───────────────┬───────────────┘
-                               │
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Synthesis & Grounding Engine                               │
-│  - AWS Bedrock Runtime (Claude 3.5 via Boto3) / Azure OpenAI │
-│  - Strict Citation Attribution & Anti-Hallucination Gate    │
-│  - Packaged via uv & Docker / MLflow Model Registry         │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                               ▼
-              [Verified Streaming Response &lt; 3-5s]
-        </pre>
-      </div>
-    </div>
-  </section>
-
   <!-- Education, Achievements & Mentorship -->
-  <section id="education" class="section section-dark">
+  <section id="education" class="section">
     <div class="container">
       <div class="two-col-grid">
         <!-- Education Column -->
@@ -458,7 +396,7 @@
               <span class="interest-icon">⚽</span>
               <div>
                 <div class="interest-title">Sports & Athletics</div>
-                <div class="interest-desc">Avid footballer. Enthusiast in cricket, volleyball, table tennis (TT), and PC gaming.</div>
+                <div class="interest-desc">Avid footballer. Enthusiast in cricket, volleyball, and PC gaming.</div>
               </div>
             </div>
             <div class="interest-item">
@@ -585,7 +523,6 @@
           <a href="https://linkedin.com/in/debasishnandy-3d0306n" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/JokaDPiero" target="_blank" rel="noopener noreferrer">GitHub</a>
           <button type="button" class="ats-viewer-trigger" style="background: none; border: none; color: inherit; cursor: pointer; font-size: inherit;">ATS Resume</button>
-          <button type="button" class="terminal-trigger" style="background: none; border: none; color: inherit; cursor: pointer; font-size: inherit;">Terminal Copilot</button>
         </div>
       </div>
     </div>
@@ -602,45 +539,6 @@
       </div>
       <div id="project-modal-body" class="modal-body">
         <!-- Rendered dynamically by ProjectsManager -->
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- MODAL: Interactive Deba AI Terminal Dialog                  -->
-  <!-- ============================================================ -->
-  <div id="terminal-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-container terminal-modal-container">
-      <div class="terminal-titlebar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <div class="terminal-title">deba@ai-core: ~ (Terminal Copilot v2.1)</div>
-        <button id="terminal-close-btn" class="modal-close-btn" aria-label="Close terminal">✕</button>
-      </div>
-
-      <div class="terminal-quick-pills">
-        <button type="button" class="term-quick-cmd" data-cmd="help">help</button>
-        <button type="button" class="term-quick-cmd" data-cmd="config">config</button>
-        <button type="button" class="term-quick-cmd" data-cmd="whoami">whoami</button>
-        <button type="button" class="term-quick-cmd" data-cmd="skills">skills</button>
-        <button type="button" class="term-quick-cmd" data-cmd="projects">projects</button>
-        <button type="button" class="term-quick-cmd" data-cmd="exp">experience</button>
-        <button type="button" class="term-quick-cmd" data-cmd="certs">certs</button>
-        <button type="button" class="term-quick-cmd" data-cmd="contact">contact</button>
-        <button type="button" class="term-quick-cmd" data-cmd="resume">resume</button>
-        <button type="button" class="term-quick-cmd" data-cmd="clear">clear</button>
-      </div>
-
-      <div id="terminal-output" class="terminal-body">
-        <!-- Output lines will appear here -->
-      </div>
-
-      <div class="terminal-input-row">
-        <span class="term-prefix">deba@ai-core:~$</span>
-        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (try 'projects' or 'config')..." aria-label="Terminal command input">
       </div>
     </div>
   </div>

@@ -12,7 +12,6 @@ Modern, dynamic responsive portfolio website for **Debasish Nandy (Lead AI Engin
 - **Dynamic `config.json` Configuration**: All numbers, metrics, and quantifiables (years of experience, concurrent users, POCs, accuracy percentages, latencies, notice period) are driven by a centralized `config.json` that hydrates the DOM asynchronously with offline fallback.
 - **Modern AI & Agentic Stack**: Showcases hands-on production engineering with **AutoGen**, **CrewAI**, **Crawl4AI**, **DSPy**, **AWS Bedrock Runtime**, **Boto3**, **LangChain**, **LangSmith**, **MLflow**, and **uv**.
 - **Privacy First**: Phone number omitted across the public website; contact flows directly through verified email, LinkedIn, and GitHub.
-- **Interactive AI Terminal Copilot (`>_ CLI`)**: An authentic interactive command-line terminal interface allowing technical recruiters to explore commands (`help`, `whoami`, `skills`, `projects`, `exp`, `education`, `certs`, `contact`, `config`, `resume`) with history navigation (Up/Down) and tab completion.
 - **Dynamic Project Explorer & Architecture Modal**: Interactive domain filter tabs, live keyword search, dynamic rendering, and deep-dive technical modals with quantified metrics, challenges, and architecture blueprints.
 - **Live Skills Search & Category Filtering**: Interactive search across Libraries, Cloud (Azure & AWS), Developer Tools, and Soft Skills.
 - **Interactive ATS Resume Viewer**: Built-in modal rendering single-column Harvard ATS text format with 1-click clipboard copy and print/PDF generation.
