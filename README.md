@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Debasish Nandy - Production AI Engineering Dynamic Portfolio
 
 Modern, dynamic responsive portfolio website for **Debasish Nandy (Lead AI Engineer & Systems Architect)**, deployed via GitHub Pages through GitHub Actions.
@@ -25,22 +24,3 @@ Modern, dynamic responsive portfolio website for **Debasish Nandy (Lead AI Engin
 - **Tooling**: `tsconfig.json`, `package.json` with strict type checking
 - **CI/CD**: GitHub Actions (`.github/workflows/pages.yml`) deploying directly to GitHub Pages
 
-## Local Development
-To serve locally, you can use any static HTTP server (e.g., Python):
-```bash
-python3 -m http.server 8000
-# Open http://localhost:8000 in your browser
-```
-
-To typecheck the TypeScript sources:
-```bash
-npx tsc --noEmit
-```
-
-## Deployment
-Automated via `.github/workflows/pages.yml` on push to `main`.
-Target URL: `https://jokadpiero.github.io/ai-engineering-portfolio/`
-=======
-# ai-engineering-portfolio
-My portfolio
->>>>>>> f5a7e9932b585d89a1d90a0b8450ffc6fd231610
