@@ -6,6 +6,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "preview": "node server.js",
     "typecheck": "tsc --noEmit",
     "build": "tsc"
   },
