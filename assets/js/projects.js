@@ -7,6 +7,7 @@ export class ProjectsManager {
     this.container = document.getElementById('projects-container');
     this.modal = document.getElementById('project-modal');
     this.modalContent = document.getElementById('project-modal-body');
+    this.lastFocusedElement = null;
     this.init();
   }
 
@@ -53,15 +54,35 @@ export class ProjectsManager {
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
-        this.closeModal();
+      if (this.modal?.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          this.closeModal();
+        } else if (e.key === 'Tab') {
+          this.trapFocus(e);
+        }
       }
     });
+  }
+
+  trapFocus(e) {
+    if (!this.modal) return;
+    const focusables = this.modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      last.focus();
+      e.preventDefault();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      first.focus();
+      e.preventDefault();
+    }
   }
 
   openModal(projectId) {
     const project = projectsData.find(p => p.id === projectId);
     if (!project || !this.modal || !this.modalContent) return;
+    this.lastFocusedElement = document.activeElement;
 
     this.modalContent.innerHTML = `
       <div class="modal-project-header">
@@ -124,6 +145,9 @@ export class ProjectsManager {
     this.modal.classList.remove('active');
     this.modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    if (this.lastFocusedElement && typeof this.lastFocusedElement.focus === 'function') {
+      this.lastFocusedElement.focus();
+    }
   }
 
   filterProjects() {

@@ -7,6 +7,7 @@ export class ProjectsManager {
   private container: HTMLElement | null = null;
   private modal: HTMLElement | null = null;
   private modalContent: HTMLElement | null = null;
+  private lastFocusedElement: HTMLElement | null = null;
 
   constructor() {
     this.container = document.getElementById('projects-container');
@@ -58,15 +59,35 @@ export class ProjectsManager {
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
-        this.closeModal();
+      if (this.modal?.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          this.closeModal();
+        } else if (e.key === 'Tab') {
+          this.trapFocus(e);
+        }
       }
     });
+  }
+
+  private trapFocus(e: KeyboardEvent): void {
+    if (!this.modal) return;
+    const focusables = this.modal.querySelectorAll<HTMLElement>('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      last.focus();
+      e.preventDefault();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      first.focus();
+      e.preventDefault();
+    }
   }
 
   public openModal(projectId: string): void {
     const project = projectsData.find(p => p.id === projectId);
     if (!project || !this.modal || !this.modalContent) return;
+    this.lastFocusedElement = document.activeElement as HTMLElement | null;
 
     this.modalContent.innerHTML = `
       <div class="modal-project-header">
@@ -129,6 +150,9 @@ export class ProjectsManager {
     this.modal.classList.remove('active');
     this.modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    if (this.lastFocusedElement && typeof this.lastFocusedElement.focus === 'function') {
+      this.lastFocusedElement.focus();
+    }
   }
 
   private filterProjects(): Project[] {

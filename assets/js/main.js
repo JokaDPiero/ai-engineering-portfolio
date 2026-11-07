@@ -24,6 +24,7 @@ class PortfolioApp {
     }
 
     // 2. Setup interaction handlers
+    this.setupScrollHeader();
     this.setupSmoothScroll();
     this.setupNavObserver();
     this.setupMetricCounters();
@@ -64,6 +65,22 @@ class PortfolioApp {
     // Re-render skills and projects if config modified them
     this.skillsManager.render();
     this.projectsManager.render();
+  }
+
+  setupScrollHeader() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const onScroll = () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('nav-scrolled');
+      } else {
+        navbar.classList.remove('nav-scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
   setupSmoothScroll() {

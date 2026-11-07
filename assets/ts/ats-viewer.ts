@@ -3,6 +3,7 @@ import { candidateData, skillCategories, experienceData, educationData, certific
 export class ATSViewer {
   private modal: HTMLElement | null = null;
   private contentEl: HTMLElement | null = null;
+  private lastFocusedElement: HTMLElement | null = null;
 
   constructor() {
     this.modal = document.getElementById('ats-modal');
@@ -38,19 +39,41 @@ export class ATSViewer {
     }
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
-        this.close();
+      if (this.modal?.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          this.close();
+        } else if (e.key === 'Tab') {
+          this.trapFocus(e);
+        }
       }
     });
 
     this.renderText();
   }
 
+  private trapFocus(e: KeyboardEvent): void {
+    if (!this.modal) return;
+    const focusables = this.modal.querySelectorAll<HTMLElement>('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      last.focus();
+      e.preventDefault();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      first.focus();
+      e.preventDefault();
+    }
+  }
+
   public open(): void {
     if (!this.modal) return;
+    this.lastFocusedElement = document.activeElement as HTMLElement | null;
     this.modal.classList.add('active');
     this.modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    const closeBtn = document.getElementById('ats-modal-close');
+    if (closeBtn) setTimeout(() => closeBtn.focus(), 50);
   }
 
   public close(): void {
@@ -58,6 +81,9 @@ export class ATSViewer {
     this.modal.classList.remove('active');
     this.modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    if (this.lastFocusedElement && typeof this.lastFocusedElement.focus === 'function') {
+      this.lastFocusedElement.focus();
+    }
   }
 
   public getRawATSString(): string {

@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+      - dev
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -16,10 +20,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  test:
+    name: Build & Validate TypeScript
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -30,10 +32,22 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Validate TypeScript Build
+      - name: Install & Run Typecheck
         run: |
           npm install
           npm run typecheck
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4

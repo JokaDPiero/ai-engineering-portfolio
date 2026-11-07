@@ -4,6 +4,7 @@ export class ATSViewer {
   constructor() {
     this.modal = document.getElementById('ats-modal');
     this.contentEl = document.getElementById('ats-content');
+    this.lastFocusedElement = null;
     this.init();
   }
 
@@ -35,19 +36,41 @@ export class ATSViewer {
     }
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
-        this.close();
+      if (this.modal?.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          this.close();
+        } else if (e.key === 'Tab') {
+          this.trapFocus(e);
+        }
       }
     });
 
     this.renderText();
   }
 
+  trapFocus(e) {
+    if (!this.modal) return;
+    const focusables = this.modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      last.focus();
+      e.preventDefault();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      first.focus();
+      e.preventDefault();
+    }
+  }
+
   open() {
     if (!this.modal) return;
+    this.lastFocusedElement = document.activeElement;
     this.modal.classList.add('active');
     this.modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    const closeBtn = document.getElementById('ats-modal-close');
+    if (closeBtn) setTimeout(() => closeBtn.focus(), 50);
   }
 
   close() {
@@ -55,6 +78,9 @@ export class ATSViewer {
     this.modal.classList.remove('active');
     this.modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    if (this.lastFocusedElement && typeof this.lastFocusedElement.focus === 'function') {
+      this.lastFocusedElement.focus();
+    }
   }
 
   getRawATSString() {
