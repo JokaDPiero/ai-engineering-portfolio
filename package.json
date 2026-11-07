@@ -1,0 +1,26 @@
+{
+  "name": "ai-engineering-portfolio",
+  "version": "2.2.0",
+  "description": "Dynamic Portfolio for Debasish Nandy, Lead AI Engineer",
+  "homepage": "https://jokadpiero.github.io/ai-engineering-portfolio/",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [
+    "ai-engineer",
+    "portfolio",
+    "typescript",
+    "genai",
+    "llm",
+    "mlops",
+    "debasish-nandy"
+  ],
+  "author": "Debasish Nandy <nandydeba2@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

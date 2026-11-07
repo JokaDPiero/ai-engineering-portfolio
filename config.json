@@ -1,0 +1,119 @@
+{
+  "$schema": "./schema.config.json",
+  "version": "2.2.0",
+  "lastUpdated": "2026-11-07",
+  "candidate": {
+    "name": "Debasish Nandy",
+    "title": "Lead AI Engineer",
+    "currentCompany": "Neutrino IQ",
+    "previousCompany": "Celebal Technologies",
+    "email": "nandydeba2@gmail.com",
+    "location": "Bongaigaon, Assam, India (IST)",
+    "github": "https://github.com/JokaDPiero",
+    "linkedin": "https://linkedin.com/in/debasishnandy-3d0306n",
+    "portfolio": "https://jokadpiero.github.io/ai-engineering-portfolio/",
+    "motto": "ALWAYS REMEMBER YOUR ‘WHY,’ LEARN FROM EVERY FAILURE, AND KEEP PUSHING FORWARD—NO MATTER THE CIRCUMSTANCES.",
+    "noticePeriodDays": 60,
+    "noticePeriodText": "60 Days (Negotiable)"
+  },
+  "quantifiables": {
+    "yearsExperience": 5,
+    "yearsExperienceDisplay": "5+ YOE",
+    "concurrentUsers": 1000,
+    "concurrentUsersDisplay": "1,000+",
+    "pocsDelivered": 10,
+    "pocsDeliveredDisplay": "10+",
+    "studentsMentored": 150,
+    "studentsMentoredDisplay": "150+",
+    "certificationsCount": 4,
+    "certificationsCountDisplay": "4x",
+    "projectsDeliveredCount": 9,
+    "projectsDeliveredDisplay": "9 Projects",
+    "genaiAccuracy": "80%+",
+    "idppAccuracy": "90%",
+    "faqAccuracy": "90%",
+    "faqConcurrency": 1000,
+    "faqConcurrencyDisplay": "1,000 concurrent users",
+    "faqLatency": "5-8s",
+    "purchasersBrainConcurrency": 100,
+    "purchasersBrainConcurrencyDisplay": "100 concurrent users",
+    "purchasersBrainLatency": "15-30s",
+    "purchasersBrainDocs": "1,100+",
+    "purchasersBrainTables": "30+",
+    "drishtiLatency": "3-5s",
+    "spaiLatency": "15-30s",
+    "cgpa": "8.8",
+    "higherSecondaryPct": "89%",
+    "secondarySchoolPct": "94%"
+  },
+  "kpiMetrics": [
+    {
+      "id": "concurrent-users",
+      "value": "1,000+",
+      "numericTarget": 1000,
+      "suffix": "+",
+      "label": "Concurrent Users Scaled",
+      "subtext": "Production GenAI systems serving real-time inference"
+    },
+    {
+      "id": "yoe",
+      "value": "5+ YOE",
+      "numericTarget": 5,
+      "suffix": "+ YOE",
+      "label": "Production AI/ML Experience",
+      "subtext": "From research POCs to enterprise scale"
+    },
+    {
+      "id": "pocs",
+      "value": "10+",
+      "numericTarget": 10,
+      "suffix": "+",
+      "label": "Enterprise POCs Delivered",
+      "subtext": "100% fulfilled client success criteria"
+    },
+    {
+      "id": "mentees",
+      "value": "150+",
+      "numericTarget": 150,
+      "suffix": "+",
+      "label": "Engineers & Students Mentored",
+      "subtext": "Full-stack data science & Azure AI hackathons"
+    },
+    {
+      "id": "certs",
+      "value": "4x",
+      "numericTarget": 4,
+      "suffix": "x",
+      "label": "Industry Certifications",
+      "subtext": "Microsoft & Databricks certified specialist"
+    }
+  ],
+  "skills": {
+    "librariesAndFrameworks": [
+      "Python", "AutoGen", "CrewAI", "Crawl4AI", "DSPy", "LangChain", "LangSmith",
+      "PyTorch", "TensorFlow", "FastAPI", "Flask", "Pandas", "NumPy",
+      "Scikit-Learn", "OpenCV", "Detectron2", "Sentence Transformers",
+      "MLflow", "Locust", "uv", "Poetry", "SQLite", "Librosa",
+      "Pillow", "Gradio", "Matplotlib/Seaborn"
+    ],
+    "cloudAndInfrastructure": [
+      "AWS Bedrock", "Bedrock Runtime", "Boto3", "Amazon OpenSearch",
+      "AWS EC2", "AWS KMS", "Secrets Manager", "AWS RDS",
+      "Azure OpenAI", "Azure AI Foundry", "Azure AI Search",
+      "Document Intelligence (Form Recognizer)", "Azure DevOps",
+      "Azure App Service", "Virtual Machines", "Container Registry (ACR)",
+      "Azure Cognitive Services", "Azure Functions", "Logic Apps",
+      "Azure SQL", "Cosmos DB", "Blob Storage", "Azure EventHubs"
+    ],
+    "developerToolsAndMLOps": [
+      "Git", "Docker", "uv", "Linux (Ubuntu / Red Hat)", "VS Code",
+      "Postman", "Jupyter", "Databricks Lakehouse", "Anaconda",
+      "Redis", "FFmpeg", "Presidio PII Redaction", "Microsoft Office"
+    ],
+    "softSkillsAndLeadership": [
+      "Problem-Solving", "Time Management", "Technical Documentation",
+      "Client Consulting", "Engineering Leadership", "On-site Coordination",
+      "Mentorship", "Cross-Functional Collaboration"
+    ]
+  }
+}

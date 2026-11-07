@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debasish Nandy | Lead AI Engineer & Systems Architect</title>
+  <meta name="description" content="Portfolio of Debasish Nandy, Lead AI Engineer specializing in production RAG, Text-to-SQL, and Cloud AI systems across AWS & Azure. 5+ YOE in BFSI, Supply Chain & Enterprise.">
+  <meta name="author" content="Debasish Nandy">
+  <link rel="canonical" href="https://jokadpiero.github.io/ai-engineering-portfolio/">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jokadpiero.github.io/ai-engineering-portfolio/">
+  <meta property="og:title" content="Debasish Nandy | Lead AI Engineer & Systems Architect">
+  <meta property="og:description" content="Portfolio of Debasish Nandy, Lead AI Engineer specializing in autonomous multi-agent systems (AutoGen, CrewAI), intelligent web extraction (Crawl4AI), DSPy, AWS Bedrock Runtime, and enterprise RAG.">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://jokadpiero.github.io/ai-engineering-portfolio/">
+  <meta name="twitter:title" content="Debasish Nandy | Lead AI Engineer & Systems Architect">
+  <meta name="twitter:description" content="Portfolio of Debasish Nandy, Lead AI Engineer specializing in autonomous multi-agent systems (AutoGen, CrewAI), DSPy, AWS Bedrock, and enterprise RAG.">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        DN<span>.ai</span>
+        <span class="brand-badge">Lead AI Eng</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#repositories">GitHub</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          🌙 <span>Dark</span>
+        </button>
+        <button class="btn-terminal-nav terminal-trigger" title="Launch Interactive AI Terminal" aria-label="Open AI Terminal">
+          <span>&gt;_</span> CLI
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-badge-row">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Lead AI Engineer • Open to Worldwide Remote (IST)
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Architecting Production-Scale <br>
+        <span class="highlight">GenAI & Multimodal LLM Systems</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        5+ years designing enterprise multi-agent systems, RAG platforms, and multimodal AI pipelines serving up to 1,000 concurrent users across AWS (Bedrock Runtime, Boto3) and Azure. Built with AutoGen, CrewAI, Crawl4AI, DSPy, LangChain, LangSmith, and MLflow.
+      </p>
+
+      <!-- Guiding Philosophy Motto -->
+      <div class="motto-banner">
+        <div class="motto-label">Guiding Philosophy & Motto</div>
+        <div class="motto-quote">
+          “Always remember your ‘Why,’ learn from every failure, and keep pushing forward—no matter the circumstances.”
+        </div>
+      </div>
+
+      <!-- Hero Call-to-Actions -->
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Explore 9 Production Projects</a>
+        <button type="button" class="btn btn-terminal terminal-trigger">&gt;_ Launch AI Terminal</button>
+        <button type="button" class="btn btn-secondary ats-viewer-trigger">📄 View ATS Resume</button>
+        <a href="https://github.com/JokaDPiero" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile ↗</a>
+      </div>
+
+      <!-- Hero KPI Metrics (Dynamically Configurable via config.json) -->
+      <div class="hero-metrics">
+        <div class="metric-card" data-metric-id="concurrent-users">
+          <span class="metric-value" data-target="1000" data-suffix="+">1,000+</span>
+          <span class="metric-label">Concurrent Users Scaled</span>
+          <span class="metric-subtext">Production GenAI systems serving real-time inference</span>
+        </div>
+        <div class="metric-card" data-metric-id="yoe">
+          <span class="metric-value" data-target="5" data-suffix="+ YOE">5+ YOE</span>
+          <span class="metric-label">Production AI/ML Experience</span>
+          <span class="metric-subtext">From research POCs to enterprise scale</span>
+        </div>
+        <div class="metric-card" data-metric-id="pocs">
+          <span class="metric-value" data-target="10" data-suffix="+">10+</span>
+          <span class="metric-label">Enterprise POCs Delivered</span>
+          <span class="metric-subtext">100% fulfilled client success criteria</span>
+        </div>
+        <div class="metric-card" data-metric-id="mentees">
+          <span class="metric-value" data-target="150" data-suffix="+">150+</span>
+          <span class="metric-label">Engineers & Students Mentored</span>
+          <span class="metric-subtext">Full-stack data science & Azure AI hackathons</span>
+        </div>
+        <div class="metric-card" data-metric-id="certs">
+          <span class="metric-value" data-target="4" data-suffix="x">4x</span>
+          <span class="metric-label">Microsoft & Databricks Certs</span>
+          <span class="metric-subtext">DP-100, AI-102, ML-Pro, AZ-900</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me & Executive Profile</h2>
+        <p class="section-subtitle">
+          Bridging bleeding-edge generative AI research with hardened cloud infrastructure and measurable business ROI.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am an accomplished <strong>Lead AI Engineer & Data Scientist</strong> with <strong>5+ years of experience</strong> developing and delivering robust data-driven & GenAI solutions across <strong>BFSI, Manufacturing, and Supply Chain</strong> domains.
+          </p>
+          <p>
+            Currently, at <strong>Neutrino IQ (NIQ)</strong>, I lead system architecture for an AWS-based multimodal CFA intelligence platform, orchestrating <strong>AWS Bedrock Runtime, Boto3, multi-agent pipelines (CrewAI, AutoGen), intelligent web crawlers (Crawl4AI), DSPy, LangChain, LangSmith, Amazon OpenSearch, and KMS envelope encryption</strong>, packaged with <strong>uv</strong> and Docker.
+          </p>
+          <p>
+            Previously at <strong>Celebal Technologies</strong>, I led technical delivery on large-scale Azure OpenAI systems, auto-scaling solutions to handle 1,000+ concurrent users with 80%+ accuracy, delivering 10+ POCs meeting all success criteria, and mentoring over 150 aspiring data scientists and engineers.
+          </p>
+          <p>
+            Skilled in data processing, model development, and cloud deployments with Azure and AWS MLOps tools (Linux, Docker, MLflow, uv, Locust). Strong in Git version control, data analytics, feature engineering, and applying state-of-the-art algorithms across Autonomous Multi-Agent Systems, Deep Learning, and Generative AI.
+          </p>
+        </div>
+
+        <div class="about-quick-specs">
+          <h3 class="specs-title">// EXECUTIVE SUMMARY & CONTACT</h3>
+          <div class="specs-list">
+            <div class="spec-item">
+              <span class="spec-label">Current Role:</span>
+              <span class="spec-val">Lead AI Engineer @ Neutrino IQ</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Previous Role:</span>
+              <span class="spec-val">Associate / Sr. Data Scientist @ Celebal</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Location:</span>
+              <span class="spec-val">Bongaigaon, Assam, India (IST)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Email:</span>
+              <span class="spec-val">
+                <a href="mailto:nandydeba2@gmail.com">nandydeba2@gmail.com</a>
+                <button type="button" class="copy-mini-btn copy-email-btn" title="Copy Email">Copy</button>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Notice Period:</span>
+              <span id="spec-notice-period" class="spec-val">60 Days (Negotiable)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Education:</span>
+              <span class="spec-val">B.Tech Honors in IT (8.8 CGPA) - KIIT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Strip -->
+      <div class="certs-strip">
+        <div class="cert-badge-card">
+          <span class="cert-icon">📜</span>
+          <div>
+            <div class="cert-title">Azure Data Scientist Associate</div>
+            <div class="cert-meta">Microsoft • DP-100</div>
+          </div>
+        </div>
+        <div class="cert-badge-card">
+          <span class="cert-icon">📜</span>
+          <div>
+            <div class="cert-title">Machine Learning Professional</div>
+            <div class="cert-meta">Databricks • ML-PRO</div>
+          </div>
+        </div>
+        <div class="cert-badge-card">
+          <span class="cert-icon">📜</span>
+          <div>
+            <div class="cert-title">Azure AI Engineer Associate</div>
+            <div class="cert-meta">Microsoft • AI-102</div>
+          </div>
+        </div>
+        <div class="cert-badge-card">
+          <span class="cert-icon">📜</span>
+          <div>
+            <div class="cert-title">Azure Fundamentals</div>
+            <div class="cert-meta">Microsoft • AZ-900</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Production Experience (5+ YOE)</h2>
+        <p class="section-subtitle">
+          Chronological track record of architecting, deploying, and auto-scaling production AI systems.
+        </p>
+      </div>
+
+      <div id="experience-timeline-container" class="experience-timeline">
+        <!-- Rendered dynamically by ExperienceManager -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <h2 class="section-title">Production Projects (All 9 End-to-End)</h2>
+          <span id="project-count-badge" class="project-count-badge">9 Projects</span>
+        </div>
+        <p class="section-subtitle">
+          Real-world enterprise systems delivered across BFSI, Supply Chain, Telecom, and Multimodal platforms. Filter by domain or search tech stack.
+        </p>
+      </div>
+
+      <!-- Controls: Filters & Search -->
+      <div class="projects-controls">
+        <div class="filter-pills-row">
+          <button type="button" class="project-filter-btn active" data-domain="all">All Domains (9)</button>
+          <button type="button" class="project-filter-btn" data-domain="Enterprise Platforms">Enterprise Platforms</button>
+          <button type="button" class="project-filter-btn" data-domain="GenAI & RAG">GenAI & RAG</button>
+          <button type="button" class="project-filter-btn" data-domain="BFSI">BFSI</button>
+          <button type="button" class="project-filter-btn" data-domain="Supply Chain">Supply Chain</button>
+          <button type="button" class="project-filter-btn" data-domain="Speech & Audio">Speech & Audio</button>
+          <button type="button" class="project-filter-btn" data-domain="Computer Vision & NLP">Computer Vision & NLP</button>
+        </div>
+
+        <div class="search-box-row">
+          <div class="search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="project-search" class="search-input" placeholder="Search by technology (e.g. AutoGen, CrewAI, Crawl4AI, Bedrock, DSPy, Docker, uv)..." aria-label="Search projects">
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Dynamic Grid -->
+      <div id="projects-container" class="projects-grid">
+        <!-- Rendered dynamically by ProjectsManager -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Expertise & Skills -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <h2 class="section-title">Technical Expertise & Skills Inventory</h2>
+        </div>
+        <p class="section-subtitle">
+          Full stack AI/ML toolkit from high-concurrency model serving to cloud architecture, computer vision, and speech processing.
+        </p>
+      </div>
+
+      <div class="skills-explorer-controls">
+        <div class="filter-pills-row">
+          <button type="button" class="skill-category-pill active" data-cat="all">All Categories</button>
+          <button type="button" class="skill-category-pill" data-cat="Libraries Commonly Used">Libraries Commonly Used</button>
+          <button type="button" class="skill-category-pill" data-cat="Cloud (Azure & AWS)">Cloud (Azure & AWS)</button>
+          <button type="button" class="skill-category-pill" data-cat="Developer Tools & MLOps">Developer Tools & MLOps</button>
+          <button type="button" class="skill-category-pill" data-cat="Soft Skills & Leadership">Soft Skills & Leadership</button>
+        </div>
+
+        <div class="search-box-row">
+          <div class="search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="skill-search-input" class="search-input" placeholder="Filter skills (e.g. AutoGen, CrewAI, Crawl4AI, DSPy, LangChain, Bedrock, MLflow, uv)..." aria-label="Filter skills">
+          </div>
+        </div>
+      </div>
+
+      <div id="skills-container" class="skills-categories-grid">
+        <!-- Rendered dynamically by SkillsManager -->
+      </div>
+    </div>
+  </section>
+
+  <!-- System Architecture Blueprint -->
+  <section id="architecture" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">System Architecture Blueprint</h2>
+        <p class="section-subtitle">
+          Production reference architecture for Multi-Agent Workflows (AutoGen, CrewAI), High-Speed Web Ingestion (Crawl4AI), Enterprise Hybrid RAG, Text-to-SQL Query Routing, DSPy Optimization, and Guardrails.
+        </p>
+      </div>
+
+      <div class="architecture-box">
+        <pre class="code-block">
+[Client Query // Stream Request // Multi-Agent Event]
+      │
+      ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Security, Agentic Gateway & Ingestion                      │
+│  - Multi-Agent Orchestration via AutoGen & CrewAI           │
+│  - High-Speed Web & Doc Ingestion via Crawl4AI              │
+│  - JWT Authentication + Role-Based Access Control (RBAC)    │
+│  - Microsoft Presidio PII Masking & Content Moderation      │
+│  - Observability & Distributed Traces via LangSmith & MLflow│
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Intent & Query Router (Classify: Relational vs Document)   │
+│  - Low-Latency GPU BERT Classifier / Cross-Encoder          │
+│  - Prompt Optimization via DSPy (Self-Refining Signatures)  │
+└──────────────┬───────────────────────────────┬──────────────┘
+               │                               │
+       [Structured Intent]           [Unstructured Intent]
+               │                               │
+               ▼                               ▼
+┌──────────────────────────────┐ ┌────────────────────────────┐
+│  Text-to-SQL Engine          │ │  Hybrid Vector RAG         │
+│  - Schema Validation (30+ Tbl)│ │  - Azure AI Search /       │
+│  - Synapse / RDS SQL Engine  │ │    Amazon OpenSearch       │
+│  - Strict Execution Guardrail│ │  - Cross-Encoder Reranker  │
+└──────────────┬───────────────┘ └─────────────┬──────────────┘
+               │                               │
+               └───────────────┬───────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Synthesis & Grounding Engine                               │
+│  - AWS Bedrock Runtime (Claude 3.5 via Boto3) / Azure OpenAI │
+│  - Strict Citation Attribution & Anti-Hallucination Gate    │
+│  - Packaged via uv & Docker / MLflow Model Registry         │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+              [Verified Streaming Response &lt; 3-5s]
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Achievements & Mentorship -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <div class="two-col-grid">
+        <!-- Education Column -->
+        <div>
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic foundations in Information Technology and sciences.</p>
+          </div>
+          <div id="education-container" class="education-cards-list">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Achievements Column -->
+        <div>
+          <div class="section-header">
+            <h2 class="section-title">Mentorship & Hackathons</h2>
+            <p class="section-subtitle">Empowering teams and advancing community talent.</p>
+          </div>
+          <div id="achievements-container" class="achievements-cards-list">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Strengths, Languages & Interests -->
+  <section id="strengths" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Core Strengths, Languages & Interests</h2>
+        <p class="section-subtitle">
+          Personal qualities, communication capabilities, and diverse passions that drive sustained engineering excellence.
+        </p>
+      </div>
+
+      <!-- Strengths Grid -->
+      <h3 style="font-size: 1.25rem; margin-bottom: 1.25rem; color: var(--accent-cyan);">✦ Professional Strengths</h3>
+      <div id="strengths-container" class="strengths-grid">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="lang-interests-grid">
+        <!-- Languages Block -->
+        <div class="card-block">
+          <h3 class="card-block-title">🌐 Languages & Proficiency</h3>
+          <div class="languages-list">
+            <div class="lang-row">
+              <div class="lang-header">
+                <span class="lang-name">English</span>
+                <span class="lang-prof">Proficient (Professional)</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-header">
+                <span class="lang-name">Assamese</span>
+                <span class="lang-prof">Native</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-header">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-prof">Intermediate (Working)</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-header">
+                <span class="lang-name">Bengali</span>
+                <span class="lang-prof">Intermediate (Working)</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Interests Block -->
+        <div class="card-block">
+          <h3 class="card-block-title">⚡ Personal Interests</h3>
+          <div class="interests-list">
+            <div class="interest-item">
+              <span class="interest-icon">⚽</span>
+              <div>
+                <div class="interest-title">Sports & Athletics</div>
+                <div class="interest-desc">Avid footballer. Enthusiast in cricket, volleyball, table tennis (TT), and PC gaming.</div>
+              </div>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">📚</span>
+              <div>
+                <div class="interest-title">Interacting & Continuous Learning</div>
+                <div class="interest-desc">Passionate about dissecting new research papers, exploring ML breakthroughs, and knowledge-sharing.</div>
+              </div>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">✨</span>
+              <div>
+                <div class="interest-title">Exploration & Star Gazing</div>
+                <div class="interest-desc">Love exploring new cultures, geography, and star gazing to reflect on the universe and oneself.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Public Repositories Section -->
+  <section id="repositories" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Open Source & Public Repositories</h2>
+        <p class="section-subtitle">
+          Direct links to public code repositories on GitHub (<a href="https://github.com/JokaDPiero" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue);">@JokaDPiero</a>).
+        </p>
+      </div>
+
+      <div class="repo-list">
+        <a href="https://github.com/JokaDPiero/financial-doc-audio-cfa-engine" target="_blank" rel="noopener noreferrer" class="repo-item">
+          <div class="repo-header">
+            <span class="repo-name">JokaDPiero / financial-doc-audio-cfa-engine</span>
+            <span class="repo-lang">Python • Bedrock Runtime • DSPy</span>
+          </div>
+          <p>Dual-stream multimodal financial intelligence engine processing 10-K filings and audio earnings calls with citation attribution and LangSmith tracing.</p>
+        </a>
+
+        <a href="https://github.com/JokaDPiero/enterprise-rag-router" target="_blank" rel="noopener noreferrer" class="repo-item">
+          <div class="repo-header">
+            <span class="repo-name">JokaDPiero / enterprise-rag-router</span>
+            <span class="repo-lang">Python • FastAPI • MLflow • uv</span>
+          </div>
+          <p>Production query routing microservice dynamically dispatching queries to Text-to-SQL or hybrid vector RAG with cross-encoder reranking and Locust benchmarks.</p>
+        </a>
+
+        <a href="https://github.com/JokaDPiero/Emilia-Voice-Assistant" target="_blank" rel="noopener noreferrer" class="repo-item">
+          <div class="repo-header">
+            <span class="repo-name">JokaDPiero / Emilia-Voice-Assistant</span>
+            <span class="repo-lang">Python • LangChain • Whisper</span>
+          </div>
+          <p>Autonomous AI voice copilot equipped with tool calling (search, calculation, SQL execution), speech synthesis, and safety guardrails.</p>
+        </a>
+
+        <a href="https://github.com/JokaDPiero/COVID-19-face-mask-detection" target="_blank" rel="noopener noreferrer" class="repo-item">
+          <div class="repo-header">
+            <span class="repo-name">JokaDPiero / COVID-19-face-mask-detection</span>
+            <span class="repo-lang">Jupyter Notebook • OpenCV</span>
+          </div>
+          <p>Deep learning computer vision pipeline utilizing transfer learning for real-time face mask detection.</p>
+        </a>
+
+        <a href="https://github.com/JokaDPiero/Image-Scraper-and-Downloader" target="_blank" rel="noopener noreferrer" class="repo-item">
+          <div class="repo-header">
+            <span class="repo-name">JokaDPiero / Image-Scraper-and-Downloader</span>
+            <span class="repo-lang">Python • Multi-threaded</span>
+          </div>
+          <p>Automated computer vision dataset collection pipeline with multi-threaded downloads and image verification.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h2>Let's Build Production AI Systems Together</h2>
+          <p>
+            I am actively exploring <strong>Lead AI Engineer</strong> and <strong>Senior AI Engineer</strong> remote opportunities worldwide. Open to high-impact technical leadership, full-time contracts, or enterprise advisory.
+          </p>
+
+          <div class="quick-contact-pills">
+            <div class="quick-contact-item">
+              <span>📧 Email:</span>
+              <span class="contact-val">nandydeba2@gmail.com</span>
+              <button type="button" class="copy-mini-btn copy-email-btn">Copy</button>
+            </div>
+            <div class="quick-contact-item">
+              <span>📍 Location:</span>
+              <span class="contact-val">Bongaigaon, Assam, India (IST)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Form -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message / Role Details</label>
+              <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Role requirements, project scope, or interview schedule..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Direct Message ✉</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Debasish Nandy. Hosted on GitHub Pages via automated CI/CD.</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/debasishnandy-3d0306n" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/JokaDPiero" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button type="button" class="ats-viewer-trigger" style="background: none; border: none; color: inherit; cursor: pointer; font-size: inherit;">ATS Resume</button>
+          <button type="button" class="terminal-trigger" style="background: none; border: none; color: inherit; cursor: pointer; font-size: inherit;">Terminal Copilot</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: Project Architecture & Deep-Dive Dialog              -->
+  <!-- ============================================================ -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="project-modal-header-title">Project Technical Blueprint</h3>
+        <button id="project-modal-close" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="project-modal-body" class="modal-body">
+        <!-- Rendered dynamically by ProjectsManager -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: Interactive Deba AI Terminal Dialog                  -->
+  <!-- ============================================================ -->
+  <div id="terminal-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container terminal-modal-container">
+      <div class="terminal-titlebar">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="terminal-title">deba@ai-core: ~ (Terminal Copilot v2.1)</div>
+        <button id="terminal-close-btn" class="modal-close-btn" aria-label="Close terminal">✕</button>
+      </div>
+
+      <div class="terminal-quick-pills">
+        <button type="button" class="term-quick-cmd" data-cmd="help">help</button>
+        <button type="button" class="term-quick-cmd" data-cmd="config">config</button>
+        <button type="button" class="term-quick-cmd" data-cmd="whoami">whoami</button>
+        <button type="button" class="term-quick-cmd" data-cmd="skills">skills</button>
+        <button type="button" class="term-quick-cmd" data-cmd="projects">projects</button>
+        <button type="button" class="term-quick-cmd" data-cmd="exp">experience</button>
+        <button type="button" class="term-quick-cmd" data-cmd="certs">certs</button>
+        <button type="button" class="term-quick-cmd" data-cmd="contact">contact</button>
+        <button type="button" class="term-quick-cmd" data-cmd="resume">resume</button>
+        <button type="button" class="term-quick-cmd" data-cmd="clear">clear</button>
+      </div>
+
+      <div id="terminal-output" class="terminal-body">
+        <!-- Output lines will appear here -->
+      </div>
+
+      <div class="terminal-input-row">
+        <span class="term-prefix">deba@ai-core:~$</span>
+        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (try 'projects' or 'config')..." aria-label="Terminal command input">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: Harvard ATS Plain-Text Resume Viewer                 -->
+  <!-- ============================================================ -->
+  <div id="ats-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Harvard ATS Plain-Text Resume</h3>
+        <button id="ats-modal-close" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+          Single-column Harvard ATS format optimized for automated applicant tracking systems.
+        </p>
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+          <button type="button" id="ats-copy-btn" class="btn btn-primary btn-sm">📋 Copy Plain Text</button>
+          <button type="button" id="ats-print-btn" class="btn btn-secondary btn-sm">🖨 Print / Save PDF</button>
+        </div>
+        <pre id="ats-content" class="ats-content-pre"></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast-notification"></div>
+
+  <!-- Main Dynamic Application Script (TypeScript-compiled ES Module) -->
+  <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>
